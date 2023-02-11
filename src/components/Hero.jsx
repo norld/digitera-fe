@@ -349,7 +349,7 @@ export function Hero() {
               when to sell to avoid painful losses.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <AppStoreLink />
+              {/* <AppStoreLink /> */}
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 variant="outline"
@@ -367,7 +367,7 @@ export function Hero() {
               </PhoneFrame>
             </div>
           </div>
-          <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
+          {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
               As featured in
             </p>
@@ -390,7 +390,7 @@ export function Hero() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>
