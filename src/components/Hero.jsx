@@ -257,75 +257,67 @@ function AppDemo() {
   return (
     <AppScreen>
       <AppScreen.Body>
-        <div className="p-4">
-          <div className="flex gap-2">
-            <div className="text-xs leading-6 text-gray-500">
-              Tailwind Labs, Inc.
-            </div>
-            <div className="text-sm text-gray-900">$CSS</div>
-            <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none">
-              <path
-                d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9"
-                stroke="#171717"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          <div className="mt-3 border-t border-gray-200 pt-5">
-            <div className="flex items-baseline gap-2">
-              <div className="text-2xl tabular-nums tracking-tight text-gray-900">
-                {activeValue.toFixed(2)}
-              </div>
-              <div className="text-sm text-gray-900">USD</div>
-              {percentageChange && (
-                <div
-                  className={clsx(
-                    'ml-auto text-sm tabular-nums tracking-tight',
-                    percentageChange >= 0 ? 'text-cyan-500' : 'text-gray-500'
-                  )}
-                >
-                  {`${
-                    percentageChange >= 0 ? '+' : ''
-                  }${percentageChange.toFixed(2)}%`}
-                </div>
-              )}
-            </div>
-            <div className="mt-6 flex gap-4 text-xs text-gray-500">
-              <div>1D</div>
-              <div>5D</div>
-              <div className="font-semibold text-cyan-600">1M</div>
-              <div>6M</div>
-              <div>1Y</div>
-              <div>5Y</div>
-            </div>
-            <div className="mt-3 rounded-lg bg-gray-50 ring-1 ring-inset ring-black/5">
-              <Chart
-                width={286}
-                height={208}
-                paddingX={16}
-                paddingY={32}
-                activePointIndex={activePointIndex}
-                onChangeActivePointIndex={setActivePointIndex}
-              />
-            </div>
-            <div className="mt-4 rounded-lg bg-cyan-500 py-2 px-4 text-center text-sm font-semibold text-white">
-              Trade
-            </div>
-            <div className="mt-3 divide-y divide-gray-100 text-sm">
-              <div className="flex justify-between py-1">
-                <div className="text-gray-500">Open</div>
-                <div className="font-medium text-gray-900">6,387.55</div>
-              </div>
-              <div className="flex justify-between py-1">
-                <div className="text-gray-500">Closed</div>
-                <div className="font-medium text-gray-900">6,487.09</div>
-              </div>
-              <div className="flex justify-between py-1">
-                <div className="text-gray-500">Low</div>
-                <div className="font-medium text-gray-900">6,322.01</div>
-              </div>
+        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+            alt=""
+            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1097 845"
+            aria-hidden="true"
+            className="hidden transform-gpu blur-3xl sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:w-[68.5625rem]"
+          >
+            <path
+              fill="url(#10724532-9d81-43d2-bb94-866e98dd6e42)"
+              fillOpacity=".2"
+              d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z"
+            />
+            <defs>
+              <linearGradient
+                id="10724532-9d81-43d2-bb94-866e98dd6e42"
+                x1="1097.04"
+                x2="-141.165"
+                y1=".22"
+                y2="363.075"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#776FFF" />
+                <stop offset={1} stopColor="#FF4694" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1097 845"
+            aria-hidden="true"
+            className="absolute left-1/2 -top-52 -z-10 w-[68.5625rem] -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0"
+          >
+            <path
+              fill="url(#8ddc7edb-8983-4cd7-bccb-79ad21097d70)"
+              fillOpacity=".2"
+              d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z"
+            />
+            <defs>
+              <linearGradient
+                id="8ddc7edb-8983-4cd7-bccb-79ad21097d70"
+                x1="1097.04"
+                x2="-141.165"
+                y1=".22"
+                y2="363.075"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#776FFF" />
+                <stop offset={1} stopColor="#FF4694" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                Work with us
+              </h2>
             </div>
           </div>
         </div>
@@ -341,7 +333,7 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Invest at the perfect time.
+              Digitera Agency
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               By leveraging insights from our network of industry insiders,
