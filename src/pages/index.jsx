@@ -19,7 +19,6 @@ export default function Home() {
           name="description"
           content="Digitera Agency adalah solusi digital untuk bisnis Anda, dengan layanan web design, sosial media management, design grafis dan logo, dan web application."
         />
-        <meta charset="UTF-8" />
         <meta
           name="keywords"
           content="web design murah, digital agency di bali, jasa logo di bali, jasa manage sosial media"
