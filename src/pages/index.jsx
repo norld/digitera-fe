@@ -14,10 +14,26 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Digitera - Digital Agency.</title>
+        <title>Digitera - Digital Agency</title>
         <meta
           name="description"
-          content="Digitera Agency adalah solusi digital untuk bisnis Anda, dengan layanan web design, sosial media management, design grafis & logo, dan web application. Kami membantu bisnis yang baru merintis hingga bisnis besar dalam meraih keberhasilan di dunia digital."
+          content="Digitera Agency adalah solusi digital untuk bisnis Anda, dengan layanan web design, sosial media management, design grafis dan logo, dan web application."
+        />
+        <meta charset="UTF-8" />
+        <meta
+          name="keywords"
+          content="web design murah, digital agency di bali, jasa logo di bali, jasa manage sosial media"
+        />
+        <meta name="author" content="Made Supardi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex" />
+
+        <meta property="og:title" content="Digitera - Digital Agency" />
+        <meta property="og:type" content="service.website" />
+        <meta property="og:url" content="https://digitera-agency.com/" />
+        <meta
+          property="og:image"
+          content="https://digitera-agency.com/logo.png"
         />
       </Head>
       <Header />
