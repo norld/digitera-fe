@@ -89,7 +89,7 @@ function DeviceCardsIcon(props) {
           y2={28}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#737373" />
+          <stop offset={1} stopColor="#737373" />
           <stop offset={1} stopColor="#737373" stopOpacity={0} />
         </linearGradient>
       </defs>
@@ -203,10 +203,7 @@ export function SecondaryFeatures() {
             yang lainnya
           </p>
         </div>
-        <ul
-          role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
-        >
+        <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
           {features.map((feature) => (
             <li
               key={feature.name}

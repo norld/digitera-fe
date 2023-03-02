@@ -156,7 +156,6 @@ function Plan({
       </p>
       <div className="order-last mt-6">
         <ul
-          role="list"
           className={clsx(
             '-my-2 divide-y text-sm',
             featured

@@ -32,7 +32,7 @@ export function PhoneFrame({
       <PlaceholderFrame className="pointer-events-none absolute inset-0 h-full w-full fill-gray-100" />
       <Image
         src={frame}
-        alt=""
+        alt="digitera frame"
         className="pointer-events-none absolute inset-0 h-full w-full"
         unoptimized
         priority={priority}

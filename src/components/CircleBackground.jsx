@@ -26,7 +26,7 @@ export function CircleBackground({
           y2="237"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={color} />
+          <stop offset="1" stopColor={color} />
           <stop offset="1" stopColor={color} stopOpacity="0" />
         </linearGradient>
       </defs>

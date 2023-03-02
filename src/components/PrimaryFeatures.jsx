@@ -98,7 +98,7 @@ function DeviceTouchIcon(props) {
           y2={17}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#737373" />
+          <stop offset={1} stopColor="#737373" />
           <stop offset={1} stopColor="#D4D4D4" stopOpacity={0} />
         </linearGradient>
       </defs>
