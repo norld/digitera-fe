@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Web Design',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Tim ahli kami akan membuat website Anda yang profesional, elegan, dan mudah digunakan dengan harga terjangkau',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Sosial Media Management',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Kami akan membantu memperkuat kehadiran brand Anda di media sosial dengan strategi yang efektif',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Design Grafis & Logo',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'Logo dan desain grafis yang menarik perhatian adalah elemen penting untuk memperkuat brand Anda',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Web Application',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Kami menawarkan pengembangan aplikasi web untuk bisnis Anda yang memudahkan pengelolaan dan memaksimalkan kinerja.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'SEO Optimization',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Dengan Search Engine Optimization (SEO), website Anda bisa jadi nomer satu di halaman pencarian. website akan di optimasi dengan keyword-keyword relevan terkait brand Anda. Sehingga peringkat website naik dan lebih mudah ditemukan.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Advertise',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Kami menyediakan jasa advertising untuk kebutuhan promosi Anda. Mulai dari strategi, persiapan materi iklan, hingga setting iklan di berbagai platform iklan seperti Instagram Ads, Facebook Ads, hingga Google Ads. ',
     icon: DeviceChartIcon,
   },
 ]
@@ -189,18 +189,18 @@ function DeviceChartIcon(props) {
 export function SecondaryFeatures() {
   return (
     <section
-      id="secondary-features"
+      id="services"
       aria-label="Features for building a portfolio"
       className="py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Layanan
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            Beberapa layanan kami yang tentunya saling berhubungan satu dengan
+            yang lainnya
           </p>
         </div>
         <ul

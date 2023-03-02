@@ -253,7 +253,7 @@ function ReviewGrid() {
 export function Reviews() {
   return (
     <section
-      id="reviews"
+      id="testimoni"
       aria-labelledby="reviews-title"
       className="pt-20 pb-16 sm:pt-32 sm:pb-24"
     >
@@ -262,10 +262,10 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-          Everyone is changing their life with Pocket.
+          Testimoni
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+          Beberapa testimoni dari klien kami tentang layanan kami
         </p>
         <ReviewGrid />
       </Container>

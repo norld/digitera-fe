@@ -8,9 +8,9 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Pemula',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Bulanan: '$0', Tahunan: '$0' },
     description:
       'You’re new to investing but want to do it right. Get started for free.',
     button: {
@@ -26,9 +26,9 @@ const plans = [
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
-    featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    name: 'Professional',
+    featured: true,
+    price: { Bulanan: 'Rp.3', Tahunan: '$70' },
     description:
       'You’ve been investing for a while. Invest more and grow your wealth faster.',
     button: {
@@ -45,9 +45,9 @@ const plans = [
     logomarkClassName: 'fill-gray-500',
   },
   {
-    name: 'VIP',
-    featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    name: 'Perusahaan',
+    featured: false,
+    price: { Bulanan: 'Custom', Tahunan: 'Custom' },
     description:
       'You’ve got a huge amount of assets but it’s not enough. To the moon.',
     button: {
@@ -119,29 +119,29 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        {price.Monthly === price.Annually ? (
-          price.Monthly
+        {price.Bulanan === price.Tahunan ? (
+          price.Bulanan
         ) : (
           <>
             <span
-              aria-hidden={activePeriod === 'Annually'}
+              aria-hidden={activePeriod === 'Tahunan'}
               className={clsx(
                 'transition duration-300',
-                activePeriod === 'Annually' &&
+                activePeriod === 'Tahunan' &&
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Monthly}
+              {price.Bulanan}
             </span>
             <span
-              aria-hidden={activePeriod === 'Monthly'}
+              aria-hidden={activePeriod === 'Bulanan'}
               className={clsx(
                 'absolute left-0 top-0 transition duration-300',
-                activePeriod === 'Monthly' &&
+                activePeriod === 'Bulanan' &&
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Annually}
+              {price.Tahunan}
             </span>
           </>
         )}
@@ -190,7 +190,7 @@ function Plan({
 }
 
 export function Pricing() {
-  let [activePeriod, setActivePeriod] = useState('Monthly')
+  let [activePeriod, setActivePeriod] = useState('Bulanan')
 
   return (
     <section
@@ -219,13 +219,13 @@ export function Pricing() {
               onChange={setActivePeriod}
               className="grid grid-cols-2"
             >
-              {['Monthly', 'Annually'].map((period) => (
+              {['Bulanan', 'Tahunan'].map((period) => (
                 <RadioGroup.Option
                   key={period}
                   value={period}
                   className={clsx(
                     'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
-                    period === 'Monthly'
+                    period === 'Bulanan'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg'
                   )}
@@ -238,17 +238,17 @@ export function Pricing() {
               aria-hidden="true"
               className={clsx(
                 'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
-                activePeriod === 'Monthly'
+                activePeriod === 'Bulanan'
                   ? '[clip-path:inset(0_50%_0_0)]'
                   : '[clip-path:inset(0_0_0_calc(50%-1px))]'
               )}
             >
-              {['Monthly', 'Annually'].map((period) => (
+              {['Bulanan', 'Tahunan'].map((period) => (
                 <div
                   key={period}
                   className={clsx(
                     'py-2 text-center text-sm font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
-                    period === 'Annually' && '-ml-px'
+                    period === 'Tahunan' && '-ml-px'
                   )}
                 >
                   {period}

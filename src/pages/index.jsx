@@ -17,14 +17,14 @@ export default function Home() {
         <title>Digitera - Digital Agency.</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="Digitera Agency adalah solusi digital untuk bisnis Anda, dengan layanan web design, sosial media management, design grafis & logo, dan web application. Kami membantu bisnis yang baru merintis hingga bisnis besar dalam meraih keberhasilan di dunia digital."
         />
       </Head>
       <Header />
       <main>
         <Hero />
         <CallToAction />
-        <Pricing />
+        {/* <Pricing /> */}
         {/* <PrimaryFeatures /> */}
         <SecondaryFeatures />
         <Reviews />

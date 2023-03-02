@@ -316,7 +316,7 @@ function AppDemo() {
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Work with us
+                Bekerja dengan kami
               </h2>
             </div>
           </div>
@@ -333,21 +333,24 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Digitera Agency
+              Digital Agency untuk Bisnis Anda
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+              Digitera Agency adalah solusi digital untuk bisnis Anda, dengan
+              layanan web design, sosial media management, design grafis & logo,
+              dan web application. Kami membantu bisnis yang baru merintis
+              hingga bisnis besar dalam meraih keberhasilan di dunia digital.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               {/* <AppStoreLink /> */}
               <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
+                href="https://api.whatsapp.com/send/?phone=628986330813"
+                target="_blank"
+                style={{ background: '#1ad03f' }}
               >
-                <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
+                {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
+                {/* <span className="ml-2.5">Hubungi Kami</span> */}
+                <span>Hubungi Kami</span>
               </Button>
             </div>
           </div>
