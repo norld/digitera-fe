@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://digitera-agency.com
+
+# Sitemaps
+Sitemap: https://digitera-agency.com/sitemap.xml
