@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export function Logomark(props) {
   return (
     <svg viewBox="0 0 40 40" aria-hidden="true" {...props}>
