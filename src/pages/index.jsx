@@ -43,7 +43,7 @@ export default function Home() {
         {/* <PrimaryFeatures /> */}
         <SecondaryFeatures />
         <Reviews />
-        <Faqs />
+        {/* <Faqs /> */}
       </main>
       <Footer />
     </>

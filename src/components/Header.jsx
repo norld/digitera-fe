@@ -107,7 +107,7 @@ export function Header() {
                             <MobileNavLink href="#testimoni">
                               Testimoni
                             </MobileNavLink>
-                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
+                            {/* <MobileNavLink href="#faqs">FAQs</MobileNavLink> */}
                           </div>
                         </Popover.Panel>
                       </>

@@ -9,7 +9,7 @@ export function NavLinks() {
     ['Tentang Kami', '#about'],
     ['Layanan', '#services'],
     ['Testimoni', '#testimoni'],
-    ['FAQs', '#faqs'],
+    // ['FAQs', '#faqs'],
   ].map(([label, href], index) => (
     <Link
       key={label}
