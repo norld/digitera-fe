@@ -119,8 +119,7 @@ export function Header() {
             <Button
               href="https://api.whatsapp.com/send/?phone=628986330813"
               target="_blank"
-              style={{ background: '#1cb65d' }}
-              className="flex content-center justify-center"
+              className="flex content-center justify-center bg-green-700"
             >
               <svg
                 viewBox="0,0,256,256"

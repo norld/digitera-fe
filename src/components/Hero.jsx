@@ -347,7 +347,7 @@ export function Hero() {
               <Button
                 href="https://api.whatsapp.com/send/?phone=628986330813"
                 target="_blank"
-                style={{ background: '#1cb65d' }}
+                className="bg-green-700"
               >
                 {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
                 {/* <span className="ml-2.5">Hubungi Kami</span> */}
