@@ -52,7 +52,7 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Logo width="100" className="h-10 w-auto" />
+              <Logo width="100" height="40" className="h-10 w-auto" />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />

@@ -24,7 +24,7 @@ export function Logo(props) {
     <img
       src="/logo.png"
       alt="Image of logo digitera"
-      style={{ width: props.width + 'px' }}
+      style={{ width: props.width + 'px', height: props.height + 'px' }}
     />
   )
 }
